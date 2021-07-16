@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEPAG</title>
+    <style>
+
+        body{
+            background-color: rgb(18, 150, 238);
+        }
+
+        #center2{
+            background-color:white;
+            text-align: center;
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id=center2>
+        <form>
+        <h1>LOGIN</h1>
+        <input type="text" placeholder="your username" id="Sn"><br><br>
+        <input type="password" placeholder="your password" id="Pw"><br><br>
+        <input type="submit" onclick=login();>
+        </form>
+    </div>
+
+    <script>
+
+        var login = function () {
+            var us = document.getElementById('Sn').value;
+            var pw = document.getElementById('Pw').value;
+            
+            if(us == "admin" && pw == "123"){
+                this.close();
+                window.open('pag3.html');
+            }else{
+            alert("username or passoword is invalid");
+            }
+        }
+    </script>
+    
+</body>
+</html>
